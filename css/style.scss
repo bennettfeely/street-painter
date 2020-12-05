@@ -1,0 +1,48 @@
+// Partials ============================================================
+@import "reset";
+@import "colors";
+@import "functions";
+@import "extensions";
+
+$tablet: 32em;
+
+$dark: black;
+$light: white;
+
+body {
+	min-height: 100vh;
+	background: #faf0e6;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.ruler-wrapper {
+	display: flex;
+	min-height: 100vh;
+}
+
+.column-left,
+.column-right {
+	flex: 1;
+}
+
+.ruler {
+	width: 1in;
+	height: 1in * 100;
+	$color: #ffdead;
+	$tick: rgba($dark, 0.5);
+
+	background: #ffdead;
+	background-image: repeating-linear-gradient(
+		transparent 0,
+		transparent calc(1in - 2px),
+		$tick calc(1in - 2px),
+		$tick 1in
+	);
+	background-size: 50% 100%;
+	background-repeat: repeat-y;
+}

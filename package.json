@@ -1,0 +1,9 @@
+{
+  "name": "mile-long-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "pug": "^3.0.0"
+  }
+}
